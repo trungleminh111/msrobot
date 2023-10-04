@@ -395,7 +395,7 @@ body {
 }
 
 .learn__basic-section .arrow::before {
-    content: url(/images/Check.svg);
+    content: url(./images/Check.svg);
     margin-right: 5px;
     color: #FF6400;
 
