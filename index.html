@@ -70,8 +70,10 @@
                         <img src="images/flag.svg" alt="">
                     </div>
                     <div class="buttons-auth">
-                        <button class="btn btn-outline-primary">Login</button>
-                        <button class="btn btn-primary">Sign up</button>
+                        <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                            data-bs-target="#modalLogin">Login</button>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-sign">Sign
+                            up</button>
                     </div>
 
                 </div>
@@ -554,6 +556,142 @@
         </div>
         <!-- Copyright -->
     </footer>
+
+    <div class="modal" id="modalLogin" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-title modal-title-modal-login">Log in to your <small>Ms.Robot </small>account!</p>
+                    <button type="button" class="close btn" data-bs-dismiss="modal" aria-bs-label="Close">
+                        <span aria-hidden="true" style="font-size: 18px;">x</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="">
+                        <div class="form-group has-feedback-name mb-4">
+                            <input type="text" class="form-control modal-inputname">
+                            <span class="modal-spanname"></span>
+                        </div>
+                        <div class="form-group has-feedback-pass">
+                            <input type="text" class="form-control modal-inputpass">
+                            <span class="modal-spanpass"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <button class="btn btn-primary modal-custom-btn">Login</button>
+                        </div>
+
+                        <div class="form-group text-center mt-2">
+                            <p>or <a class="modal-forgot" data-bs-toggle="modal" data-bs-target="#modal-forgot">Forgot
+                                    password</a></p>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer modal-footer-custom">
+
+                    <p class="text-center">Already have an account? <a class="modal-forgot" data-bs-toggle="modal"
+                            data-bs-target="#modal-sign"> Sign up</a></p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-forgot" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-title modal-title-modal-login">Forgot password</p>
+                    <button type="button" class="close btn" data-bs-dismiss="modal" aria-bs-label="Close">
+                        <span aria-hidden="true" style="font-size: 18px;">x</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="post">
+                        <div class="form-group has-feedback-name mb-4">
+                            <input type="text" class="form-control modal-inputname">
+                            <span class="modal-spanname"></span>
+                        </div>
+                        <div class="form-group has-feedback-pass">
+                            <input type="text" class="form-control modal-inputpass">
+                            <span class="modal-spanpass"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <button class="btn btn-primary modal-custom-btn">Login</button>
+                        </div>
+
+                        <div class="form-group text-center mt-2">
+                            <p>or <small class="modal-forgot" data-bs-toggle="modal" data-bs-target="#modalLogin">Forgot
+                                    password</small></p>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-sign" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-title modal-title-modal-login">Sign Up and Start Learning!</p>
+                    <button type="button" class="close btn" data-bs-dismiss="modal" aria-bs-label="Close">
+                        <span aria-hidden="true" style="font-size: 18px;">x</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="">
+                        <div class="form-group has-feedback-name mb-4">
+                            <input type="text" class="form-control modal-inputname">
+                            <span class="modal-spanname"></span>
+                        </div>
+                        <div class="form-group has-feedback-pass mb-4">
+                            <input type="text" class="form-control modal-inputpass">
+                            <span class="modal-spanpass"></span>
+                        </div>
+                        <div class="form-group has-feedback-verify">
+                            <input type="text" class="form-control modal-inputverify">
+                            <span class="modal-spanverify"></span>
+                        </div>
+
+                        <p class="please">Please use this email & password to login our Demo Sites when using Selenium
+                            Test Automation.
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input check" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Yes! I want to receive emails with Selenium Tips and ebook!
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary modal-custom-btn">Sign Up</button>
+                        </div>
+
+                        <div class="form-group text-center mt-2">
+                            <p style="font-size: 12px;">By signing up, you agree to our <small
+                                    class="modal-forgot">Terms of Use</small> and
+                                <small class="modal-forgot"> Privacy Policy.</small>
+                            </p>
+
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer modal-footer-custom">
+
+                    <p class="text-center">Already have an account? <a class="modal-forgot" data-bs-toggle="modal"
+                            data-bs-target="#modalLogin">Log In</a></p>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
     <!-- Bootstrap JavaScript Libraries -->
     <script src=" https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">

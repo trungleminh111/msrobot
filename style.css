@@ -796,6 +796,150 @@ footer h5 {
     color: var(--primary-color);
 }
 
+/* modal */
+
+.modal-title-modal-login {
+    color: var(--dark-color);
+    font-size: 18px;
+    font-family: "Circular std", sans-serif;
+    font-weight: 450;
+
+}
+
+.modal-title-modal-login small {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.has-feedback-name {
+    position: relative;
+}
+
+.modal-inputname {
+    border-radius: 0px;
+    position: relative;
+    padding-left: 40px;
+}
+
+.modal-inputname:focus+.modal-spanname::after {
+    display: none;
+}
+
+.modal-spanname::before {
+    content: url(./images/Iconemail.svg);
+    position: absolute;
+    top: 9px;
+    left: 10px;
+
+}
+
+.modal-spanname::after {
+    content: 'Email';
+    position: absolute;
+    top: 9px;
+    left: 40px;
+    color: #919EAB;
+
+}
+
+.has-feedback-pass {
+    position: relative;
+}
+
+.modal-inputpass {
+    border-radius: 0px;
+    position: relative;
+    padding-left: 40px;
+}
+
+.modal-inputpass:focus+.modal-spanpass::after {
+    display: none;
+}
+
+.modal-spanpass::before {
+    content: url(./images/Mask.svg);
+    position: absolute;
+    top: 9px;
+    left: 10px;
+
+}
+
+.modal-spanpass::after {
+    content: 'Password';
+    position: absolute;
+    top: 9px;
+    left: 40px;
+    color: #919EAB;
+
+}
+
+.has-feedback-verify {
+    position: relative;
+}
+
+
+
+.modal-inputverify {
+    border-radius: 0px;
+    position: relative;
+    padding-left: 40px;
+}
+
+.modal-inputverify:focus+.modal-spanverify::after {
+    display: none;
+}
+
+.modal-spanverify::before {
+    content: url(./images/Mask.svg);
+    position: absolute;
+    top: 9px;
+    left: 10px;
+
+}
+
+.modal-spanverify::after {
+    content: 'Verify password';
+    position: absolute;
+    top: 9px;
+    left: 40px;
+    color: #919EAB;
+
+}
+
+.modal-custom-btn {
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.modal-forgot {
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 700;
+
+}
+
+.modal-footer-custom {
+
+    display: flex;
+    justify-content: center;
+}
+
+.modal-forgot {
+    text-decoration: none;
+}
+
+.please {
+    margin-top: 20px;
+    color: var(--primary-color);
+    font-size: 14px;
+    font-family: "Circular std", sans-serif;
+
+}
+
+
+
 @media only screen and (max-width: 900px) {
     .sourcecode__section .right {
         margin-top: 70px;
