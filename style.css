@@ -289,21 +289,17 @@ body {
 }
 
 .sourcecode__section .right {
-
-    max-width: 474px;
-
     display: flex;
     align-items: center;
 
 }
 
 .sourcecode__section .right .box {
-    width: 100%;
+    max-width: 474px;
     background-color: #ffffff;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     margin: 0 auto;
     padding: 40px;
-
 }
 
 .sourcecode__section .right .title {
